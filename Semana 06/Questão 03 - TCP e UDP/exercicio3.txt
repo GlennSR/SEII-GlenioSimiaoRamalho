@@ -1,0 +1,14 @@
+1) Qual  o  limite  de bytes a serem enviados por pacotes TCP e UDP?
+
+	TCP: Máximo de 64 kbytes, mas normalmente o máximo utilizado é de 1500 bytes
+
+	UDP: Máximo de 64 kbytes
+
+2) Como um arquivo grande pode ser transmitido via internet?
+
+	Ele é fragmentado em diversos pacotes de dados que são enviados em sequência para o destinatário
+
+3) Qual a diferença entre as implementações TCP e UDP para esse problema?
+
+	Se um dos fragmentos do arquivo grande é perdido utilizando TCP, uma solicitação de reenvio é relizada e esse fragmento é reenviado para garantir que o arquivo chegue na integra
+	Se um dos fragmentos é perdido utilizando UDP, esse fragmento não será reenviado e o arquivo chegará incompleto no destinatário.
