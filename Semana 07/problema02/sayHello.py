@@ -40,7 +40,6 @@ class SayHello(App):
                         size_hint = (1, 0.5),
                         bold = True,
                         background_color = '#00FFCE',
-                        background_normal = ''
                         )
         self.button.bind(on_press=self.callback)
         self.window.add_widget(self.button)
